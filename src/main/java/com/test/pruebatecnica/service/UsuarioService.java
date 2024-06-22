@@ -4,13 +4,13 @@ import com.test.pruebatecnica.model.Usuario;
 
 import java.math.BigDecimal;
 
-public interface UsuarioService {
+public interface UsuarioService{
 
     Usuario save(Usuario user);
     void delete(Usuario user);
 
     Usuario update(Usuario entity);
-    public Usuario findById(BigDecimal id);
+    Usuario findById(Long id);
     boolean authenticate(String email, String password);
 
     Usuario findByEmail(String email);

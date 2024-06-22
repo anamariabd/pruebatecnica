@@ -29,8 +29,8 @@ public class UsuarioServiceImp implements UsuarioService{
     }
 
     @Override
-    public Usuario findById(BigDecimal id) {
-        return null;
+    public Usuario findById(Long id) {
+        return usuarioRepository.findById(id).get();
     }
 
     @Override

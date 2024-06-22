@@ -3,6 +3,7 @@ package com.test.pruebatecnica.controller;
 
 import com.test.pruebatecnica.PruebatecnicaApplication;
 import com.test.pruebatecnica.model.Usuario;
+import com.test.pruebatecnica.repository.UsuarioRepository;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,12 +31,12 @@ import java.util.regex.Pattern;
 public class RegisterController implements Initializable {
 
     @Autowired
-    private UsuarioService usuarioService;
+    private UsuarioRepository usuarioService;
+
+    private Stage stage;
 
     @FXML
     private TextField firstName;
-
-    private Stage stage;
 
     @FXML
     private TextField lastName;
@@ -45,9 +46,6 @@ public class RegisterController implements Initializable {
 
     @FXML
     private PasswordField password;
-
-    @FXML
-    private Button btnCreate;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -65,7 +63,9 @@ public class RegisterController implements Initializable {
     @FXML
     private void saveUser(ActionEvent event){
 
-        if(getEmail() == null){
+    //    Usuario userEmail = usuarioService.findByEmail(getEmail());
+
+        if(getEmail() != null){
             if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") && !getPassword().isEmpty()){
 
                 Usuario user = new Usuario();
@@ -76,16 +76,20 @@ public class RegisterController implements Initializable {
 
                 Usuario newUser = usuarioService.save(user);
 
-              //  saveAlert(newUser);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Usuario registrado correctamente.");
+                alert.setHeaderText(null);
+                alert.setContentText("El usuario "+newUser.getNombre()+" "+newUser.getApellido() +" ha sido creado exitosamente");
+                alert.showAndWait();
             }
 
         }else{
-            Usuario user = usuarioService.findByEmail(getEmail());
+            Usuario user = usuarioService.findByCorreo(getEmail());
             user.setNombre(getFirstName());
             user.setApellido(getLastName());
             user.setCorreo(getEmail());
             user.setPassword(getLastName());
-            Usuario updatedUser =  usuarioService.update(user);
+//            Usuario updatedUser =  usuarioService.update(user);
           // updateAlert(updatedUser);
         }
 

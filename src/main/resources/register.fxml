@@ -16,7 +16,7 @@
                 </Label>
                 <VBox prefHeight="382.0" prefWidth="610.0">
                     <children>
-                        <Label text="Usuario">
+                        <Label text="Nombre">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -24,12 +24,12 @@
                                 <Insets top="10.0" />
                             </VBox.margin>
                         </Label>
-                        <TextField fx:id="txtUser" onKeyTyped="#eventKey">
+                        <TextField fx:id="firstName" onKeyTyped="#eventKey">
                             <font>
                                 <Font size="18.0" />
                             </font>
                         </TextField>
-                        <Label text="Nombre">
+                        <Label text="Apellido">
                         <font>
                             <Font size="18.0" />
                         </font>
@@ -37,7 +37,7 @@
                             <Insets top="10.0" />
                         </VBox.margin>
                     </Label>
-                        <TextField fx:id="txtNombre" onKeyTyped="#eventKey">
+                        <TextField fx:id="lastName" onKeyTyped="#eventKey">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -45,8 +45,14 @@
                   <Label text="Correo">
                      <font>
                         <Font size="18.0" />
-                     </font></Label>
-                  <TextField prefHeight="44.0" prefWidth="794.0" />
+                     </font>
+                  </Label>
+                        <TextField fx:id="email"  prefHeight="44.0" prefWidth="794.0" >
+
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </TextField>
 
                         <Label text="Contraseña">
                             <VBox.margin>
@@ -56,12 +62,12 @@
                                 <Font size="18.0" />
                             </font>
                         </Label>
-                        <PasswordField fx:id="txtPassword" onKeyTyped="#eventKey">
+                        <PasswordField fx:id="password" onKeyTyped="#eventKey">
                             <font>
                                 <Font size="18.0" />
                             </font>
                         </PasswordField>
-                        <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#registrar" prefHeight="46.0" prefWidth="367.0" text="Registrar">
+                        <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#saveUser" prefHeight="46.0" prefWidth="367.0" text="Registrar">
                             <font>
                                 <Font size="20.0" />
                             </font>

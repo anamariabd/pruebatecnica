@@ -57,7 +57,6 @@ public class PruebatecnicaApplication extends Application {
 		}catch (Exception e){
 			e.printStackTrace();
 		}
-
 	}
 
 	public static void transitionScene(Event e, String fileName) throws IOException {
@@ -87,13 +86,10 @@ public class PruebatecnicaApplication extends Application {
 		log.debug("Transitioning to: " + resourceName.toString());
 		Parent parent = FXMLLoader.load(resourceName);
 
-		// Loading FXML will trigger initialize on the associated controller.
-		// The controller may redirect the UI to a different FXML instead,
-		// so we now check to see if our bypass stack is empty or not.
 		if (!bypassSceneStack.isEmpty()) {
 			log.debug("Bypass scene set. Loading it instead: " + bypassSceneStack.peek());
 			parent = FXMLLoader.load(bypassSceneStack.peek());
-			bypassSceneStack.pop(); // pop it if we loaded it
+			bypassSceneStack.pop();
 
 			// we might've loaded another redirect in that child FXML that we just loaded now,
 			// so peek again to capture that too.

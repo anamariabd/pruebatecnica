@@ -4,7 +4,6 @@ import com.test.pruebatecnica.config.StageManager;
 import com.test.pruebatecnica.model.Usuario;
 import com.test.pruebatecnica.repository.UsuarioRepository;
 import com.test.pruebatecnica.service.UsuarioService;
-//import com.test.pruebatecnica.view.FxmlView;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -96,7 +95,7 @@ public class UsuarioController implements Initializable {
     @FXML
     private void saveUser(ActionEvent event){
 
-            if(getEmail() == null){
+            if(getEmail() != null){
                 if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") && emptyValidation("Password", getPassword().isEmpty())){
 
                     Usuario user = new Usuario();
@@ -107,7 +106,7 @@ public class UsuarioController implements Initializable {
 
                     Usuario newUser = usuarioService.save(user);
 
-                    saveAlert(newUser);
+                  //  saveAlert(newUser);
                 }
 
             }else{
@@ -146,14 +145,6 @@ public class UsuarioController implements Initializable {
         password.clear();
     }
 
-    private void saveAlert(Usuario user){
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("User saved successfully.");
-        alert.setHeaderText(null);
-        alert.setContentText("The user "+user.getNombre()+" "+user.getApellido() +" has been created and id is "+ user.getId() +".");
-        alert.showAndWait();
-    }
 
     private void updateAlert(Usuario user){
 
