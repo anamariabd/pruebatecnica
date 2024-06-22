@@ -1,0 +1,558 @@
+2024-06-22T10:55:40.906-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 38548 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T10:55:40.908-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T10:55:41.403-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T10:55:41.466-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-06-22T10:55:41.785-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T10:55:41.789-05:00  WARN 38548 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T10:55:41.942-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52458b3e
+2024-06-22T10:55:41.943-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T10:55:41.982-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T10:55:42.063-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T10:55:42.101-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T10:55:42.420-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T10:55:42.487-05:00  WARN 38548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T10:55:42.491-05:00  WARN 38548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T10:55:43.254-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T10:55:43.257-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T10:55:43.433-05:00  WARN 38548 --- [pruebatecnica] [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springFXMLLoader' defined in file [C:\Users\anama\Desktop\Estudio\spring\pruebatecnica\build\classes\java\main\com\test\pruebatecnica\config\SpringFXMLLoader.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'java.util.ResourceBundle' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-22T10:55:43.434-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T10:55:43.436-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T10:55:43.442-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T10:55:43.449-05:00  INFO 38548 --- [pruebatecnica] [JavaFX Application Thread] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-22T10:55:43.470-05:00 ERROR 38548 --- [pruebatecnica] [JavaFX Application Thread] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.test.pruebatecnica.config.SpringFXMLLoader required a bean of type 'java.util.ResourceBundle' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'java.util.ResourceBundle' in your configuration.
+
+2024-06-22T10:56:46.797-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 12876 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T10:56:46.799-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T10:56:47.191-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T10:56:47.261-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-06-22T10:56:47.598-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T10:56:47.601-05:00  WARN 12876 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T10:56:47.734-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c8cffee
+2024-06-22T10:56:47.736-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T10:56:47.797-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T10:56:47.887-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T10:56:47.929-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T10:56:48.185-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T10:56:48.233-05:00  WARN 12876 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T10:56:48.236-05:00  WARN 12876 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T10:56:48.912-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T10:56:48.914-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T10:56:48.922-05:00  WARN 12876 --- [pruebatecnica] [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springFXMLLoader' defined in file [C:\Users\anama\Desktop\Estudio\spring\pruebatecnica\build\classes\java\main\com\test\pruebatecnica\config\SpringFXMLLoader.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'java.util.ResourceBundle' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-22T10:56:48.922-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T10:56:48.925-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T10:56:48.931-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T10:56:48.938-05:00  INFO 12876 --- [pruebatecnica] [JavaFX Application Thread] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-22T10:56:48.959-05:00 ERROR 12876 --- [pruebatecnica] [JavaFX Application Thread] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.test.pruebatecnica.config.SpringFXMLLoader required a bean of type 'java.util.ResourceBundle' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'java.util.ResourceBundle' in your configuration.
+
+2024-06-22T11:04:35.335-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 31672 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:04:35.339-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:04:35.972-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:04:36.033-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
+2024-06-22T11:04:36.318-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:04:36.322-05:00  WARN 31672 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:04:36.454-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3531d52d
+2024-06-22T11:04:36.457-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:04:36.496-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:04:36.569-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:04:36.612-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:04:36.913-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:04:36.980-05:00  WARN 31672 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:04:36.984-05:00  WARN 31672 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:04:37.699-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:04:37.703-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:04:37.710-05:00  WARN 31672 --- [pruebatecnica] [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springFXMLLoader' defined in file [C:\Users\anama\Desktop\Estudio\spring\pruebatecnica\build\classes\java\main\com\test\pruebatecnica\config\SpringFXMLLoader.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'java.util.ResourceBundle' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-22T11:04:37.710-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:04:37.713-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:04:37.719-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:04:37.723-05:00  INFO 31672 --- [pruebatecnica] [JavaFX Application Thread] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-22T11:04:37.745-05:00 ERROR 31672 --- [pruebatecnica] [JavaFX Application Thread] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.test.pruebatecnica.config.SpringFXMLLoader required a bean of type 'java.util.ResourceBundle' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'java.util.ResourceBundle' in your configuration.
+
+2024-06-22T11:07:18.122-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 29812 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:07:18.125-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:07:18.792-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:07:18.846-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-06-22T11:07:19.147-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:07:19.151-05:00  WARN 29812 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:07:19.277-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23017511
+2024-06-22T11:07:19.279-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:07:19.315-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:07:19.360-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:07:19.394-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:07:19.667-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:07:19.714-05:00  WARN 29812 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:07:19.719-05:00  WARN 29812 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:07:20.353-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:07:20.356-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:07:20.362-05:00  WARN 29812 --- [pruebatecnica] [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springFXMLLoader' defined in file [C:\Users\anama\Desktop\Estudio\spring\pruebatecnica\build\classes\java\main\com\test\pruebatecnica\config\SpringFXMLLoader.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'java.util.ResourceBundle' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-06-22T11:07:20.362-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:07:20.365-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:07:20.371-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:07:20.376-05:00  INFO 29812 --- [pruebatecnica] [JavaFX Application Thread] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-22T11:07:20.396-05:00 ERROR 29812 --- [pruebatecnica] [JavaFX Application Thread] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.test.pruebatecnica.config.SpringFXMLLoader required a bean of type 'java.util.ResourceBundle' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'java.util.ResourceBundle' in your configuration.
+
+2024-06-22T11:09:05.207-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 17644 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:09:05.211-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:09:06.029-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:09:06.085-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2024-06-22T11:09:06.383-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:09:06.386-05:00  WARN 17644 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:09:06.519-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@155aeaf4
+2024-06-22T11:09:06.520-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:09:06.556-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:09:06.635-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:09:06.680-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:09:06.991-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:09:07.061-05:00  WARN 17644 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:09:07.066-05:00  WARN 17644 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:09:07.778-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:09:07.782-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:09:08.063-05:00  INFO 17644 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.489 seconds (process running for 4.462)
+2024-06-22T11:10:53.549-05:00  INFO 17644 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:10:53.551-05:00  INFO 17644 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:10:53.557-05:00  INFO 17644 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:12:26.604-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 41172 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:12:26.606-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:12:27.205-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:12:27.280-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2024-06-22T11:12:27.708-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:12:27.716-05:00  WARN 41172 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:12:27.957-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@926ced3
+2024-06-22T11:12:27.960-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:12:28.137-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:12:28.274-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:12:28.333-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:12:28.699-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:12:28.769-05:00  WARN 41172 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:12:28.774-05:00  WARN 41172 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:12:29.662-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:12:29.666-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:12:30.132-05:00  INFO 41172 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.984 seconds (process running for 5.623)
+2024-06-22T11:13:41.593-05:00  INFO 41172 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:13:41.600-05:00  INFO 41172 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:13:41.618-05:00  INFO 41172 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:13:49.119-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 26784 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:13:49.126-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:13:49.982-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:13:50.064-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-06-22T11:13:50.533-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:13:50.539-05:00  WARN 26784 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:13:50.753-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a8bd1c5
+2024-06-22T11:13:50.757-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:13:50.822-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:13:50.914-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:13:50.969-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:13:51.409-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:13:51.478-05:00  WARN 26784 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:13:51.483-05:00  WARN 26784 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:13:52.361-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:13:52.365-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:13:52.810-05:00  INFO 26784 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 4.889 seconds (process running for 6.571)
+2024-06-22T11:17:08.600-05:00  INFO 26784 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:17:08.606-05:00  INFO 26784 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:17:08.625-05:00  INFO 26784 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:17:15.835-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 21212 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:17:15.838-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:17:16.339-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:17:16.416-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-06-22T11:17:16.825-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:17:16.831-05:00  WARN 21212 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:17:17.020-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a0f1ba6
+2024-06-22T11:17:17.021-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:17:17.063-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:17:17.131-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:17:17.186-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:17:17.559-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:17:17.632-05:00  WARN 21212 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:17:17.637-05:00  WARN 21212 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:17:18.569-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:17:18.573-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:17:19.014-05:00  INFO 21212 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.679 seconds (process running for 6.593)
+2024-06-22T11:22:09.946-05:00  INFO 21212 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:22:09.951-05:00  INFO 21212 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:22:09.960-05:00  INFO 21212 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:22:13.957-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 18548 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:22:13.960-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:22:14.702-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:22:14.804-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-06-22T11:22:15.255-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:22:15.262-05:00  WARN 18548 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:22:15.497-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44f0b4ee
+2024-06-22T11:22:15.500-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:22:15.557-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:22:15.643-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:22:15.689-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:22:16.128-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:22:16.197-05:00  WARN 18548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:22:16.202-05:00  WARN 18548 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:22:17.274-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:22:17.279-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:22:17.696-05:00  INFO 18548 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 4.243 seconds (process running for 5.738)
+2024-06-22T11:23:36.626-05:00  INFO 18548 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:23:36.634-05:00  INFO 18548 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:23:36.646-05:00  INFO 18548 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:23:42.107-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 32696 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:23:42.109-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:23:42.600-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:23:42.670-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-06-22T11:23:43.077-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:23:43.082-05:00  WARN 32696 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:23:43.223-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@575724a5
+2024-06-22T11:23:43.225-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:23:43.260-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:23:43.314-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:23:43.348-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:23:43.645-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:23:43.711-05:00  WARN 32696 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:23:43.715-05:00  WARN 32696 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:23:44.432-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:23:44.435-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:23:44.779-05:00  INFO 32696 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.095 seconds (process running for 4.234)
+2024-06-22T11:24:04.536-05:00  INFO 32696 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:24:04.543-05:00  INFO 32696 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:24:04.553-05:00  INFO 32696 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:24:38.135-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 14972 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:24:38.139-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:24:38.709-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:24:38.785-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interface.
+2024-06-22T11:24:39.175-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:24:39.180-05:00  WARN 14972 --- [pruebatecnica] [JavaFX Application Thread] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2024-06-22T11:24:39.337-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bc83b30
+2024-06-22T11:24:39.339-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:24:39.381-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:24:39.440-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:24:39.485-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:24:39.875-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:24:39.937-05:00  WARN 14972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:24:39.942-05:00  WARN 14972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:24:40.718-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:24:40.722-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:24:41.085-05:00  INFO 14972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.447 seconds (process running for 5.226)
+2024-06-22T11:25:10.974-05:00  INFO 14972 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:25:10.978-05:00  INFO 14972 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:25:10.992-05:00  INFO 14972 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:51:14.024-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 25972 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:51:14.026-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:51:14.493-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:51:14.560-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-06-22T11:51:14.959-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:51:15.096-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c92ca43
+2024-06-22T11:51:15.098-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:51:15.137-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:51:15.200-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:51:15.238-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:51:15.521-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:51:15.575-05:00  WARN 25972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:51:15.579-05:00  WARN 25972 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:51:16.348-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:51:16.351-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:51:16.697-05:00  INFO 25972 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.111 seconds (process running for 4.691)
+2024-06-22T11:53:13.261-05:00  INFO 25972 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:53:13.268-05:00  INFO 25972 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:53:13.284-05:00  INFO 25972 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:53:16.534-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 20956 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:53:16.537-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:53:17.069-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:53:17.141-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-06-22T11:53:17.553-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:53:17.725-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1475334a
+2024-06-22T11:53:17.728-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:53:17.808-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:53:17.905-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:53:17.958-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:53:18.387-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:53:18.466-05:00  WARN 20956 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:53:18.472-05:00  WARN 20956 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:53:19.316-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:53:19.319-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:53:19.632-05:00  INFO 20956 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.618 seconds (process running for 4.665)
+2024-06-22T11:53:24.545-05:00  INFO 20956 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:53:24.548-05:00  INFO 20956 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:53:24.554-05:00  INFO 20956 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T11:54:08.320-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 25580 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T11:54:08.322-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T11:54:08.764-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T11:54:08.871-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
+2024-06-22T11:54:09.235-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T11:54:09.395-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71cf36e6
+2024-06-22T11:54:09.397-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T11:54:09.437-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T11:54:09.508-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T11:54:09.548-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T11:54:09.858-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T11:54:09.917-05:00  WARN 25580 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T11:54:09.923-05:00  WARN 25580 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T11:54:10.695-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T11:54:10.699-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:54:11.070-05:00  INFO 25580 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.189 seconds (process running for 4.236)
+2024-06-22T11:54:19.094-05:00  INFO 25580 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T11:54:19.099-05:00  INFO 25580 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T11:54:19.115-05:00  INFO 25580 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:03:47.263-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 42232 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:03:47.269-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:03:48.033-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:03:48.124-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2024-06-22T12:03:48.590-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:03:48.770-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@575724a5
+2024-06-22T12:03:48.773-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:03:48.823-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:03:48.908-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:03:48.966-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:03:49.396-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:03:49.479-05:00  WARN 42232 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:03:49.483-05:00  WARN 42232 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:03:50.536-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:03:50.540-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:03:50.946-05:00  INFO 42232 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 4.603 seconds (process running for 7.586)
+2024-06-22T12:03:58.853-05:00  INFO 42232 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:03:58.859-05:00  INFO 42232 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:03:58.883-05:00  INFO 42232 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:06:26.975-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 15168 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:06:26.978-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:06:27.542-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:06:27.619-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-06-22T12:06:28.005-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:06:28.153-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50102797
+2024-06-22T12:06:28.155-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:06:28.194-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:06:28.268-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:06:28.306-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:06:28.633-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:06:28.696-05:00  WARN 15168 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:06:28.702-05:00  WARN 15168 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:06:29.488-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:06:29.492-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:06:29.848-05:00  INFO 15168 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.386 seconds (process running for 5.221)
+2024-06-22T12:06:37.950-05:00  INFO 15168 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:06:37.959-05:00  INFO 15168 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:06:37.995-05:00  INFO 15168 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:17:00.396-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 11112 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:17:00.407-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:17:01.075-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:17:01.152-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-06-22T12:17:01.587-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:17:01.796-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b84f7d0
+2024-06-22T12:17:01.800-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:17:01.848-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:17:01.927-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:17:01.973-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:17:02.394-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:17:02.478-05:00  WARN 11112 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:17:02.484-05:00  WARN 11112 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:17:03.629-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:17:03.633-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:17:04.106-05:00  INFO 11112 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 4.556 seconds (process running for 7.439)
+2024-06-22T12:21:17.669-05:00  INFO 11112 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:21:17.672-05:00  INFO 11112 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:21:17.678-05:00  INFO 11112 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:21:22.775-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 30940 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:21:22.777-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:21:23.339-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:21:23.420-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2024-06-22T12:21:23.808-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:21:23.977-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1258699b
+2024-06-22T12:21:23.979-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:21:24.020-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:21:24.090-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:21:24.129-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:21:24.462-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:21:24.526-05:00  WARN 30940 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:21:24.530-05:00  WARN 30940 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:21:25.510-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:21:25.513-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:21:25.872-05:00  INFO 30940 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.648 seconds (process running for 5.875)
+2024-06-22T12:21:43.448-05:00  INFO 30940 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:21:43.454-05:00  INFO 30940 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:21:43.473-05:00  INFO 30940 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:26:06.028-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 39312 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:26:06.032-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:26:06.682-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:26:06.806-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2024-06-22T12:26:07.631-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:26:07.972-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37400c50
+2024-06-22T12:26:07.977-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:26:08.043-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:26:08.146-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:26:08.228-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:26:08.762-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:26:08.886-05:00  WARN 39312 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:26:08.894-05:00  WARN 39312 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:26:10.221-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:26:10.229-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:26:10.842-05:00  INFO 39312 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 5.472 seconds (process running for 7.696)
+2024-06-22T12:26:46.694-05:00  INFO 39312 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:26:46.701-05:00  INFO 39312 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:26:46.716-05:00  INFO 39312 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:26:50.525-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 21304 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:26:50.532-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:26:51.315-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:26:51.410-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-06-22T12:26:51.878-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:26:52.089-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51a37489
+2024-06-22T12:26:52.102-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:26:52.165-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:26:52.265-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:26:52.358-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:26:53.823-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:26:53.992-05:00  WARN 21304 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:26:53.998-05:00  WARN 21304 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:26:56.930-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:26:56.938-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:26:57.537-05:00  INFO 21304 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 7.661 seconds (process running for 9.192)
+2024-06-22T12:26:57.539-05:00  INFO 21304 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:26:57.541-05:00  INFO 21304 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:26:57.559-05:00  INFO 21304 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:27:02.399-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 21204 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:27:02.402-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:27:02.914-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:27:02.999-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-06-22T12:27:03.350-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:27:03.496-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ca43a30
+2024-06-22T12:27:03.498-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:27:03.539-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:27:03.596-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:27:03.633-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:27:03.995-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:27:04.071-05:00  WARN 21204 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:27:04.075-05:00  WARN 21204 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:27:04.918-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:27:04.922-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:27:05.228-05:00  INFO 21204 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.296 seconds (process running for 4.344)
+2024-06-22T12:27:40.178-05:00  INFO 21204 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:27:40.184-05:00  INFO 21204 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:27:40.201-05:00  INFO 21204 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:29:36.871-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 19568 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:29:36.874-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:29:37.269-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:29:37.331-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface.
+2024-06-22T12:29:37.654-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:29:37.784-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3605db5c
+2024-06-22T12:29:37.786-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:29:37.818-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:29:37.864-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:29:37.905-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:29:38.195-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:29:38.248-05:00  WARN 19568 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:29:38.252-05:00  WARN 19568 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:29:38.912-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:29:38.915-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:29:39.180-05:00  INFO 19568 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 2.694 seconds (process running for 3.965)
+2024-06-22T12:29:41.368-05:00  INFO 19568 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:29:41.372-05:00  INFO 19568 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:29:41.381-05:00  INFO 19568 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:30:10.387-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 36188 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:30:10.389-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:30:10.870-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:30:10.934-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-06-22T12:30:11.297-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:30:11.464-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ef9dfce
+2024-06-22T12:30:11.466-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:30:11.504-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:30:11.568-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:30:11.603-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:30:11.964-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:30:12.029-05:00  WARN 36188 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:30:12.033-05:00  WARN 36188 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:30:12.828-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:30:12.830-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:30:13.146-05:00  INFO 36188 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.424 seconds (process running for 5.049)
+2024-06-22T12:30:24.083-05:00  INFO 36188 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:30:24.093-05:00  INFO 36188 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:30:24.131-05:00  INFO 36188 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:30:41.995-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 41288 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:30:42.000-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:30:42.522-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:30:42.590-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-06-22T12:30:42.989-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:30:43.148-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@575724a5
+2024-06-22T12:30:43.150-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:30:43.200-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:30:43.279-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:30:43.321-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:30:43.685-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:30:43.754-05:00  WARN 41288 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:30:43.759-05:00  WARN 41288 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:30:44.594-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:30:44.597-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:30:44.903-05:00  INFO 41288 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.534 seconds (process running for 4.478)
+2024-06-22T12:31:04.868-05:00  INFO 41288 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:31:04.873-05:00  INFO 41288 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:31:04.893-05:00  INFO 41288 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-22T12:31:21.142-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 with PID 34888 (started by anama in C:\Users\anama\Desktop\Estudio\spring\pruebatecnica)
+2024-06-22T12:31:21.145-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T12:31:21.785-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22T12:31:21.882-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2024-06-22T12:31:22.298-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-22T12:31:22.500-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3aab096c
+2024-06-22T12:31:22.503-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-22T12:31:22.553-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22T12:31:22.634-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22T12:31:22.686-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-22T12:31:23.089-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22T12:31:23.169-05:00  WARN 34888 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-22T12:31:23.175-05:00  WARN 34888 --- [pruebatecnica] [JavaFX Application Thread] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22T12:31:23.981-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22T12:31:23.984-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:31:24.306-05:00  INFO 34888 --- [pruebatecnica] [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 3.678 seconds (process running for 8.161)
+2024-06-22T12:31:27.833-05:00  INFO 34888 --- [pruebatecnica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22T12:31:27.838-05:00  INFO 34888 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-22T12:31:27.858-05:00  INFO 34888 --- [pruebatecnica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

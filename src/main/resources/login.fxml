@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.pruebatecnica.controller.LoginController">
+
+    <children>
+        <VBox fx:id="containerLeft" alignment="CENTER" prefWidth="427.0" HBox.hgrow="ALWAYS" />
+          <VBox layoutX="31.0" layoutY="170.0" prefHeight="257.0" prefWidth="394.0">
+              <children>
+                  <Label text="Usuario">
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+                      <VBox.margin>
+                          <Insets top="10.0" />
+                      </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUser" onKeyTyped="#eventKey">
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+                  </TextField>
+                  <Label text="Contraseña">
+                      <VBox.margin>
+                          <Insets top="10.0" />
+                      </VBox.margin>
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" onKeyTyped="#eventKey">
+                      <font>
+                          <Font size="18.0" />
+                      </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+                  </PasswordField>
+                  <Button onAction="#onLogin"
+                          maxWidth="1.7976931348623157E308"
+                          mnemonicParsing="false" prefHeight="25.0"
+                          prefWidth="371.0" text="Ingresar" >
+                      <font>
+                          <Font size="20.0" />
+                      </font>
+                      <VBox.margin>
+                          <Insets top="20.0" />
+                      </VBox.margin>
+                  </Button>
+            <Hyperlink text="REGISTRAR"  onAction="#redirectToRegister"/>
+              </children>
+          </VBox>
+          <Label layoutX="165.0" layoutY="95.0" text="Acceso">
+              <font>
+                  <Font size="40.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>
