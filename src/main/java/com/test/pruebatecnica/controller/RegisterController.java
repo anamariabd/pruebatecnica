@@ -2,8 +2,10 @@ package com.test.pruebatecnica.controller;
 
 
 import com.test.pruebatecnica.PruebatecnicaApplication;
+import com.test.pruebatecnica.config.StageManager;
 import com.test.pruebatecnica.model.Usuario;
 import com.test.pruebatecnica.repository.UsuarioRepository;
+import com.test.pruebatecnica.view.FxmlView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,8 +20,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-import com.test.pruebatecnica.service.UsuarioService;
+import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -27,12 +30,16 @@ import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Component
-public class RegisterController implements Initializable {
+@Controller
+public class RegisterController {
 
     @Autowired
-    private UsuarioRepository usuarioService;
+    private  UsuarioRepository repository;
 
+
+    @Lazy
+    @Autowired
+    private StageManager stageManager;
     private Stage stage;
 
     @FXML
@@ -47,10 +54,7 @@ public class RegisterController implements Initializable {
     @FXML
     private PasswordField password;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-    }
 
     public void eventKey(KeyEvent keyEvent) {
     }
@@ -63,10 +67,11 @@ public class RegisterController implements Initializable {
     @FXML
     private void saveUser(ActionEvent event){
 
-    //    Usuario userEmail = usuarioService.findByEmail(getEmail());
+    //    Usuario userEmail = repository.findByEmail(getEmail());
 
         if(getEmail() != null){
-            if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") && !getPassword().isEmpty()){
+            if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") &&
+                    !getPassword().isEmpty() && getPassword().length() >=8){
 
                 Usuario user = new Usuario();
                 user.setNombre(getFirstName());
@@ -74,7 +79,7 @@ public class RegisterController implements Initializable {
                 user.setCorreo(getEmail());
                 user.setPassword(getPassword());
 
-                Usuario newUser = usuarioService.save(user);
+                Usuario newUser = repository.save(user);
 
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Usuario registrado correctamente.");
@@ -84,12 +89,12 @@ public class RegisterController implements Initializable {
             }
 
         }else{
-            Usuario user = usuarioService.findByCorreo(getEmail());
+            Usuario user = repository.findByEmail(getEmail());
             user.setNombre(getFirstName());
             user.setApellido(getLastName());
             user.setCorreo(getEmail());
             user.setPassword(getLastName());
-//            Usuario updatedUser =  usuarioService.update(user);
+//            Usuario updatedUser =  repository.update(user);
           // updateAlert(updatedUser);
         }
 
@@ -138,17 +143,6 @@ public class RegisterController implements Initializable {
 
     @FXML
     private void redirectToLogin(ActionEvent event) throws IOException {
-        Parent loader = null;
-        try {
-            loader = FXMLLoader.load(getClass().getResource("/login.fxml"));
-            stage =(Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(loader);
-            stage.setScene(scene);
-            stage.show();
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
+        stageManager.switchScene(FxmlView.LOGIN);
     }
 }

@@ -95,8 +95,10 @@ public class UsuarioController implements Initializable {
     @FXML
     private void saveUser(ActionEvent event){
 
-            if(getEmail() != null){
-                if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") && emptyValidation("Password", getPassword().isEmpty())){
+            if(getEmail() != null && getPassword() != null){
+                if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+")
+                && validate("Password", getPassword(), "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d)(?=.*[@$!%*?&])[A-Za-z\\\\d@$!%*?&]{8,}$")
+                ){
 
                     Usuario user = new Usuario();
                     user.setNombre(getFirstName());

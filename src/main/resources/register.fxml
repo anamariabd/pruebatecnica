@@ -5,7 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox prefHeight="503.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.pruebatecnica.controller.RegisterController">
+<HBox prefHeight="503.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.test.pruebatecnica.controller.RegisterController">
     <children>
         <VBox fx:id="containerLeft" alignment="CENTER" prefWidth="427.0" HBox.hgrow="ALWAYS">
             <children>

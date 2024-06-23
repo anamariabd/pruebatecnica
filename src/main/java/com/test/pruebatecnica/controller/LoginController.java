@@ -2,7 +2,10 @@ package com.test.pruebatecnica.controller;
 
 
 import com.test.pruebatecnica.PruebatecnicaApplication;
+import com.test.pruebatecnica.config.StageManager;
+import com.test.pruebatecnica.model.Usuario;
 import com.test.pruebatecnica.service.UsuarioService;
+import com.test.pruebatecnica.view.FxmlView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +19,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -28,7 +32,9 @@ public class LoginController implements Initializable {
     @FXML
     private TextField txtUser;
 
-
+    @Lazy
+    @Autowired
+    private StageManager stageManager;
     private Stage stage;
 
     @FXML
@@ -47,26 +53,19 @@ public class LoginController implements Initializable {
 
 
      @FXML
-    public void onLogin(){
-        String username = txtUser.getText();
-        String password  = txtPassword.getText();
-        System.out.println(username + "  "+ password);
+     public void onLogin() {
+         String username = txtUser.getText();
+         String password = txtPassword.getText();
+         Usuario usuario = this.usuarioService.findByEmail(username);
+         Boolean init = this.usuarioService.authenticate(username, password);
+         System.out.println(usuario);
 
     }
 
     @FXML
     private void redirectToRegister(ActionEvent event) throws IOException {
-        Parent loader = null;
-        try {
-            loader = FXMLLoader.load(PruebatecnicaApplication.class.getResource("/register.fxml"));
-            stage =(Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(loader);
-            stage.setScene(scene);
-            stage.show();
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        stageManager.switchScene(FxmlView.REGISTER);
 
     }
 

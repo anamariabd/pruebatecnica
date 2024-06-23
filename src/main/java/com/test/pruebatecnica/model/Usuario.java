@@ -7,12 +7,13 @@ import jakarta.persistence.*;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false,unique = true, updatable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String nombre;
     private String apellido;
-    private String correo;
+    private String email;
     private String password;
 
     public Long getId() {
@@ -40,11 +41,11 @@ public class Usuario {
     }
 
     public String getCorreo() {
-        return correo;
+        return email;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setCorreo(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
