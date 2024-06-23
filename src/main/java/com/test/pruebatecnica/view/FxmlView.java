@@ -25,6 +25,28 @@ public enum FxmlView {
         public String getFxmlFile() {
             return "/login.fxml";
         }
+    },   INICIO {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("home.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/home.fxml";
+        }
+    },
+
+    FORGOT {
+        @Override
+        public String getTitle() {
+            return getStringFromResourceBundle("forgot.title");
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/olvideClave.fxml";
+        }
     };
 
     public abstract String getTitle();

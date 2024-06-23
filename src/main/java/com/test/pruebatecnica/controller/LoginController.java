@@ -13,6 +13,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
@@ -40,12 +42,15 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField txtPassword;
 
+    @FXML
+    public Button loginBtn;
+
     @Autowired
     private UsuarioService usuarioService;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        loginBtn.setStyle("-fx-background-color: #45aaee");
     }
 
     public void eventKey(KeyEvent keyEvent) {
@@ -56,9 +61,18 @@ public class LoginController implements Initializable {
      public void onLogin() {
          String username = txtUser.getText();
          String password = txtPassword.getText();
-         Usuario usuario = this.usuarioService.findByEmail(username);
-         Boolean init = this.usuarioService.authenticate(username, password);
-         System.out.println(usuario);
+
+         Boolean isAuth = this.usuarioService.authenticate(username, password);
+         if(!isAuth){
+             Alert alert = new Alert(Alert.AlertType.WARNING);
+             alert.setTitle("Credenciales invalidas");
+             alert.setHeaderText(null);
+             alert.setContentText("El correo y/o contraseña no son correctos");
+             alert.showAndWait();
+         }else {
+             stageManager.switchScene(FxmlView.INICIO);
+         }
+
 
     }
 
@@ -69,4 +83,10 @@ public class LoginController implements Initializable {
 
     }
 
+    @FXML
+    private void redirectToForgot(ActionEvent event) throws IOException {
+
+        stageManager.switchScene(FxmlView.FORGOT);
+
+    }
 }

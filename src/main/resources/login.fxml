@@ -5,12 +5,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.pruebatecnica.controller.LoginController">
+<AnchorPane prefHeight="503.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.pruebatecnica.controller.LoginController">
 
     <children>
-        <VBox fx:id="containerLeft" alignment="CENTER" prefWidth="427.0" HBox.hgrow="ALWAYS" />
-          <VBox layoutX="31.0" layoutY="170.0" prefHeight="257.0" prefWidth="394.0">
+          <VBox layoutX="91.0" layoutY="163.0" prefHeight="234.0" prefWidth="372.0">
               <children>
                   <Label text="Usuario">
                       <font>
@@ -41,10 +39,7 @@
                   <Insets />
                </VBox.margin>
                   </PasswordField>
-                  <Button onAction="#onLogin"
-                          maxWidth="1.7976931348623157E308"
-                          mnemonicParsing="false" prefHeight="25.0"
-                          prefWidth="371.0" text="Ingresar" >
+                  <Button fx:id="loginBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onLogin" prefHeight="25.0" prefWidth="371.0" text="Ingresar" textFill="WHITE">
                       <font>
                           <Font size="20.0" />
                       </font>
@@ -52,13 +47,14 @@
                           <Insets top="20.0" />
                       </VBox.margin>
                   </Button>
-            <Hyperlink text="REGISTRAR"  onAction="#redirectToRegister"/>
               </children>
           </VBox>
-          <Label layoutX="165.0" layoutY="95.0" text="Acceso">
+          <Label layoutX="206.0" layoutY="97.0" text="Acceso">
               <font>
                   <Font size="40.0" />
               </font>
           </Label>
+      <Hyperlink layoutX="418.0" layoutY="414.0" onAction="#redirectToRegister" prefHeight="24.0" prefWidth="100.0" text="Registrar" />
+      <Hyperlink layoutX="96.0" layoutY="414.0" onAction="#redirectToForgot" text="Olvidé mi clave" />
     </children>
 </AnchorPane>

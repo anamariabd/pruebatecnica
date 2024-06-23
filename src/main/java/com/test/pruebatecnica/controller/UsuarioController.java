@@ -59,12 +59,6 @@ public class UsuarioController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //   userTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-
-        //       setColumnProperties();
-
-        // Add all users into table
-        loadUserDetails();
     }
 
 

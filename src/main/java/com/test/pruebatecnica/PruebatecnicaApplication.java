@@ -30,7 +30,6 @@ import java.io.IOException;
 public class PruebatecnicaApplication extends Application {
 	protected ConfigurableApplicationContext springContext;
 	protected StageManager stageManager;
-
 	@Autowired
 	SpringFXMLLoader springFXMLLoader;
 
@@ -69,6 +68,7 @@ public class PruebatecnicaApplication extends Application {
 	@Bean
 	@Lazy(value = true) //Stage only created after Spring context bootstap
 	public StageManager stageManager(Stage stage) throws IOException {
+
 		return new StageManager(springFXMLLoader, stage);
 	}
 

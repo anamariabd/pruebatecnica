@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
 @Service
-public class UsuarioServiceImp implements UsuarioService{
+public class UsuarioServiceImp implements UsuarioService {
 
     @Autowired
     private UsuarioRepository usuarioRepository;
@@ -35,7 +35,11 @@ public class UsuarioServiceImp implements UsuarioService{
 
     @Override
     public boolean authenticate(String email, String password) {
-        return false;
+        Usuario user = this.usuarioRepository.findByEmail(email);
+
+        if (user == null ) return false;
+        return user.getPassword().equals( password);
+
     }
 
     @Override

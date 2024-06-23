@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane prefHeight="503.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.pruebatecnica.controller.PasswordController">
+   <children>
+      <Label layoutX="92.0" layoutY="54.0" text="Recuperar contraseña">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+      <Label layoutX="126.0" layoutY="109.0" text="Email" >
+      <font>
+         <Font size="18.0" />
+      </font>
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+      </Label>
+      <TextField fx:id="correo" layoutX="128.0" layoutY="134.0" >
+      <font>
+         <Font size="18.0" />
+      </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="129.0" layoutY="205.0" >
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordAlt" layoutX="129.0" layoutY="276.0" >
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="129.0" layoutY="176.0" text="Contraseña">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label layoutX="132.0" layoutY="252.0" text="Confirmar contraseña" >
+
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Hyperlink onAction="#redirectToLogin"  layoutX="40.0" layoutY="30.0" text="&lt;- Atrás" />
+   </children>
+
+</AnchorPane>

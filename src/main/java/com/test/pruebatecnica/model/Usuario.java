@@ -13,7 +13,11 @@ public class Usuario {
 
     private String nombre;
     private String apellido;
+
+    @Column(nullable = false, unique = true)
     private String email;
+
+
     private String password;
 
     public Long getId() {

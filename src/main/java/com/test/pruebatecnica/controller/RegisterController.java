@@ -31,7 +31,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Controller
-public class RegisterController {
+public class RegisterController implements Initializable {
 
     @Autowired
     private  UsuarioRepository repository;
@@ -54,7 +54,8 @@ public class RegisterController {
     @FXML
     private PasswordField password;
 
-
+    @FXML
+    private Button btnRegister;
 
     public void eventKey(KeyEvent keyEvent) {
     }
@@ -67,9 +68,9 @@ public class RegisterController {
     @FXML
     private void saveUser(ActionEvent event){
 
-    //    Usuario userEmail = repository.findByEmail(getEmail());
+        Usuario userEmail = repository.findByEmail(getEmail());
 
-        if(getEmail() != null){
+        if( userEmail == null &&  getEmail() != null){
             if(validate("Email", getEmail(), "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+") &&
                     !getPassword().isEmpty() && getPassword().length() >=8){
 
@@ -78,13 +79,26 @@ public class RegisterController {
                 user.setApellido(getLastName());
                 user.setCorreo(getEmail());
                 user.setPassword(getPassword());
-
-                Usuario newUser = repository.save(user);
-
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Usuario registrado correctamente.");
-                alert.setHeaderText(null);
-                alert.setContentText("El usuario "+newUser.getNombre()+" "+newUser.getApellido() +" ha sido creado exitosamente");
+                try {
+                    Usuario newUser = repository.save(user);
+
+                    alert.setTitle("Usuario registrado correctamente.");
+                    alert.setHeaderText(null);
+                    alert.setContentText("El usuario "+newUser.getNombre()+" "+newUser.getApellido() +" ha sido creado exitosamente");
+                    alert.showAndWait();
+                } catch (Exception exception) {
+                    exception.printStackTrace();
+                    alert.setTitle("Error al registrar usuario");
+                    alert.setHeaderText(null);
+                    alert.setContentText("El correo " + user.getCorreo() +" ya existe");
+                    alert.showAndWait();
+                }
+
+            }else{
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Error al registrar");
+                alert.setHeaderText("Error, ingrese correo correcto");
                 alert.showAndWait();
             }
 
@@ -108,11 +122,11 @@ public class RegisterController {
             if(m.find() && m.group().equals(value)){
                 return true;
             }else{
-                validationAlert(field, false);
+              //  validationAlert(field, false);
                 return false;
             }
         }else{
-            validationAlert(field, true);
+         //   validationAlert(field, true);
             return false;
         }
     }
@@ -144,5 +158,11 @@ public class RegisterController {
     @FXML
     private void redirectToLogin(ActionEvent event) throws IOException {
         stageManager.switchScene(FxmlView.LOGIN);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        btnRegister.setStyle("-fx-background-color: #45aaee");
     }
 }
