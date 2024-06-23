@@ -18,9 +18,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
@@ -70,6 +72,8 @@ public class LoginController implements Initializable {
              alert.setContentText("El correo y/o contraseña no son correctos");
              alert.showAndWait();
          }else {
+             Usuario userlogin = this.usuarioService.findByEmail(username);
+             this.usuarioService.setUserLogin(userlogin);
              stageManager.switchScene(FxmlView.INICIO);
          }
 

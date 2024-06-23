@@ -6,6 +6,10 @@ import java.math.BigDecimal;
 
 public interface UsuarioService{
 
+
+    void setUserLogin(Usuario usuario);
+    Usuario getUserLogin();
+
     Usuario save(Usuario user);
     void delete(Usuario user);
 
